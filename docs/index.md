@@ -106,17 +106,14 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 ### **For Researchers**
 - [ Data Standards](metadata-schema/) - Metadata schema documentation
 - [ Use Cases](use-cases.html) - Real-world application examples
-- [🤝 Community Guidelines](community.html) - Collaboration expectations (comming soon!)
+- [ Community Guidelines](community.html) - Collaboration expectations (comming soon!)
 
 ### **For Developers**
-- [🔌 API Documentation](api-docs.html) - Integration specifications
-- [📦 SDK Downloads](sdk.html) - Development tools and libraries
-- [🧪 Sandbox Environment](sandbox.html) - Testing and experimentation
-- [🐛 Issue Tracking](https://github.com/inspirelabs/inspire-platform/issues) - Bug reports and feature requests
+- [ Issue Tracking](https://github.com/inspirelabs/inspire-platform/issues) - Bug reports and feature requests
 
 ---
 
-## 🤝 **Community & Collaboration**
+##  **Community & Collaboration**
 
 ### **Get Involved**
 
@@ -129,9 +126,9 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 
 ### **Contact & Support**
 
-- **💬 General Discussion:** [GitHub Discussions](https://github.com/mettakyle/inspire-labs/discussions)
-- **📧 Research Inquiries:** [kyle.metta@noaa.gov](mailto:kyle.metta@noaa.gov)
-- **🐛 Bug Reports:** [GitHub Issues](https://github.com/mettakyle/inspirelabs/inspire-platform/issues)
+- ** General Discussion:** [GitHub Discussions](https://github.com/mettakyle/inspire-labs/discussions)
+- ** Research Inquiries:** [kyle.metta@noaa.gov](mailto:kyle.metta@noaa.gov)
+- ** Bug Reports:** [GitHub Issues](https://github.com/mettakyle/inspirelabs/inspire-platform/issues)
 
 ---
 
@@ -150,7 +147,7 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 
 ---
 
-## 🏛️ **About NOAA's Social Science Program**
+## **About NOAA's Social Science Program**
 
 The **Social Science Program (SSP)** within NOAA's Weather Program Office advances the integration of social science research with weather and water forecasting to improve societal outcomes and decision-making.
 
@@ -164,7 +161,7 @@ Learn more about [NOAA's Social Science Program](https://www.weather.gov/about/s
 
 ---
 
-## 📄 **Acknowledgments**
+##  **Acknowledgments**
 
 InSPIRE Labs is supported by:
 - **NOAA Weather Program Office** - Primary funding and institutional support
@@ -174,7 +171,7 @@ InSPIRE Labs is supported by:
 
 ---
 
-## 📜 **License & Use**
+##  **License & Use**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
