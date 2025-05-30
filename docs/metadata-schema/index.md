@@ -20,20 +20,20 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 
 <div class="quick-start-section">
   <div class="quick-option">
-    <h3>📥 Get Templates</h3>
+    <h3> Get Templates</h3>
     <p>Download ready-to-use templates</p>
     <a href="templates/inspire-template.csv" class="btn btn-primary">CSV Template</a>
     <a href="schema/inspire-schema.json" class="btn btn-secondary">JSON Schema</a>
   </div>
   
   <div class="quick-option">
-    <h3>✅ Validate Data</h3>
+    <h3> Validate Data</h3>
     <p>Test your metadata</p>
     <a href="tools/validator.html" class="btn btn-primary">Online Validator</a>
   </div>
   
   <div class="quick-option">
-    <h3>📚 See Examples</h3>
+    <h3> See Examples</h3>
     <p>Real-world datasets</p>
     <a href="examples/" class="btn btn-primary">Browse Examples</a>
   </div>
@@ -120,7 +120,7 @@ Geospatial analysis of social vulnerability to extreme heat in urban environment
 
 ---
 
-## ✅ **Validation & Tools**
+##  **Validation & Tools**
 
 ### **Online Validator**
 Test your metadata against the InSPIRE schema with our interactive validation tool.
