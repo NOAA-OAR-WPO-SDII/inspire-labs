@@ -1,0 +1,62 @@
+{
+  "title": "Impact-Based Tornado Warning Communication Effectiveness in Moore, Oklahoma",
+  "abstract": "Mixed-methods study examining public response to impact-based tornado warnings during the 2023 severe weather season. Combines survey data on warning reception and interpretation with behavioral observation data and emergency manager interviews to evaluate communication effectiveness.",
+  "purpose": "To assess whether impact-based warning language improves public understanding and protective action taking compared to traditional warnings, informing National Weather Service communication strategies",
+  "creator": "Dr. Rachel Thompson, University of Oklahoma",
+  "unique_identifier": "10.5555/moore-tornado-warnings-2023",
+  "version": "1.1",
+  "contributors": [
+    {
+      "name": "Dr. Kevin Martinez",
+      "role": "Co-Investigator"
+    },
+    {
+      "name": "Ashley Williams",
+      "role": "Field Data Collector"
+    },
+    {
+      "name": "Moore Emergency Management",
+      "role": "Community Partner"
+    },
+    {
+      "name": "National Weather Service Norman",
+      "role": "Community Partner"
+    }
+  ],
+  "funding_reference": ["NOAA Award #NA22OAR4590199", "University of Oklahoma Research Council"],
+  "license": "Government Public Data (U.S. Federal Only)",
+  "citation_recommendation": "Thompson, R., Martinez, K., & Williams, A. (2023). Impact-Based Tornado Warning Communication Effectiveness in Moore, Oklahoma. University of Oklahoma. https://doi.org/10.5555/moore-tornado-warnings-2023",
+  
+  "subject_category": "Weather Communication",
+  "keywords_controlled": ["Tornado Forecasting", "Social Equity in Disasters"],
+  "keywords_other": ["Warning Communication", "Impact-Based Warnings", "Protective Action", "Risk Communication", "Emergency Response", "Public Understanding"],
+  "related_datasets": ["https://doi.org/10.5555/nws-warnings-2023", "https://doi.org/10.5555/storm-reports-oklahoma-2023"],
+  
+  "geographic_coverage_controlled": ["United States", "Midwest"],
+  "geographic_coverage_specific": "Moore, Oklahoma and surrounding Cleveland County communities",
+  "coordinate_system": "WGS84",
+  "spatial_resolution": "Household level for surveys, ZIP code level for aggregated analysis",
+  "temporal_coverage_start": "2023-03-01",
+  "temporal_coverage_end": "2023-08-31",
+  "temporal_resolution": "Event-based data collection during severe weather warnings plus post-season surveys",
+  
+  "data_type": "Survey Data",
+  "data_format": "CSV, R data files",
+  "collection_methodology": "Pre/post surveys via telephone and online platforms, real-time behavioral observation during warning events, semi-structured interviews with emergency managers and broadcast meteorologists",
+  "uncertainty_quantification": "Survey confidence intervals at 95% level; response rates 28% pre-season, 41% post-event; qualitative data includes intercoder reliability statistics (κ=0.84)",
+  "data_processing": "Survey data weighted for demographic representativeness, qualitative data coded using framework analysis, warning message content analyzed using automated text analysis with manual verification",
+  "provenance": "Data collected during 2023 severe weather season, interviews transcribed and coded fall 2023, final dataset compiled December 2023 with updated version including follow-up data January 2024",
+  
+  "use_cases": "Public Risk Communication",
+  "integration_with_other_data": "Links to NWS warning database via event timestamps and geographic coordinates, compatible with Storm Events Database and local emergency response logs",
+  
+  "community_engagement": true,
+  "equity_accessibility": true,
+  
+  "data_access_url": "https://weather.ou.edu/datasets/tornado-warning-communication",
+  "file_size": "156 MB",
+  "software_dependencies": "R 4.2+, survey package, qualitative analysis software (NVivo or similar)",
+  "access_restrictions": "Interview transcripts require restricted access due to privacy; survey data publicly available with geographic identifiers removed",
+  "data_sensitivity": true,
+  "retention_policy": "Maintained by University of Oklahoma Libraries with 15-year retention commitment, archived with NOAA National Centers for Environmental Information"
+}
