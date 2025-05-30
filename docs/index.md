@@ -8,7 +8,7 @@
 
 ---
 
-## 🌟 **What is InSPIRE?**
+##  **What is InSPIRE?**
 
 **InSPIRE Labs** is the development space for the **Integrated Societal-data Platform for Interdisciplinary Research and Evaluation** — or InSPIRE for short. This platform is a core product of the **Societal Data Insights Initiative (SDII)** within NOAA's Social Science Program (SSP) at the Weather Program Office (WPO).
 
@@ -16,7 +16,7 @@ We're building InSPIRE as a **cloud-native platform on Amazon Web Services (AWS)
 
 ---
 
-## 🧪 **Why Labs?**
+##  **Why Labs?**
 
 This space is for **experiments, feedback, and iteration**. You'll find:
 
@@ -28,19 +28,19 @@ This space is for **experiments, feedback, and iteration**. You'll find:
   </div>
   
   <div class="feature-card">
-    <h3>📚 Tutorials</h3>
+    <h3> Tutorials</h3>
     <p>Step-by-step guides for working with social science and weather data</p>
     <a href="tutorials/" class="btn-link">View Tutorials →</a>
   </div>
   
   <div class="feature-card">
-    <h3>📋 Metadata Schema</h3>
+    <h3> Metadata Schema</h3>
     <p>Standardized metadata framework for social science weather datasets</p>
     <a href="metadata-schema/" class="btn-link">Schema Documentation →</a>
   </div>
   
   <div class="feature-card">
-    <h3>🎨 Design Artifacts</h3>
+    <h3> Design Artifacts</h3>
     <p>User research, wireframes, and design decisions driving platform development</p>
     <a href="design-artifacts/" class="btn-link">Design Resources →</a>
   </div>
@@ -48,7 +48,7 @@ This space is for **experiments, feedback, and iteration**. You'll find:
 
 ---
 
-## 📋 **InSPIRE Metadata Schema**
+## **InSPIRE Metadata Schema**
 
 *Comprehensive metadata framework for social science datasets related to weather and climate*
 
@@ -63,7 +63,7 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
   <a href="metadata-schema/" class="btn btn-outline">📖 Full Documentation</a>
 </div>
 
-### **🎯 Schema Highlights**
+### ** Schema Highlights**
 
 - **7 logical sections** organizing 34+ metadata fields
 - **Controlled vocabularies** for consistency and discoverability  
@@ -73,7 +73,7 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 
 ---
 
-## 🚀 **Platform Development**
+##  **Platform Development**
 
 ### **Current Focus Areas**
 
@@ -95,26 +95,25 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 ### **Technology Stack**
 
 - **Cloud Infrastructure:** Amazon Web Services (AWS)
-- **Data Storage:** S3, RDS, DynamoDB
+- **Data Storage:** S3,
 - **Processing:** Lambda, EC2, SageMaker
-- **API:** RESTful services with GraphQL
-- **Frontend:** Modern web frameworks with accessibility focus
+- **API:** 
+- **Frontend:** Modern web frameworks and graphical user interface
 
 ---
 
 ## 📖 **Resources**
 
 ### **Getting Started**
-- [📘 Platform Overview](overview.html) - High-level introduction to InSPIRE
-- [🔧 Technical Architecture](architecture.html) - System design and components
-- [👥 User Personas](personas.html) - Who we're building for
-- [🗺️ Roadmap](roadmap.html) - Upcoming features and milestones
+- [ Platform Overview](overview.html) - High-level introduction to InSPIRE
+- [ Technical Architecture](architecture.html) - System design and components (comming soon)
+- [ User Personas](personas.html) - Who we're building for
+
 
 ### **For Researchers**
-- [📊 Data Standards](metadata-schema/) - Metadata schema documentation
-- [💡 Use Cases](use-cases.html) - Real-world application examples
-- [📝 Best Practices](best-practices.html) - Research methodology guidance
-- [🤝 Community Guidelines](community.html) - Collaboration expectations
+- [ Data Standards](metadata-schema/) - Metadata schema documentation
+- [ Use Cases](use-cases.html) - Real-world application examples
+- [🤝 Community Guidelines](community.html) - Collaboration expectations (comming soon!)
 
 ### **For Developers**
 - [🔌 API Documentation](api-docs.html) - Integration specifications
@@ -129,20 +128,16 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 ### **Get Involved**
 
 **Research Community**
-- Join our [monthly research calls](community/research-calls.html)
+- Join our [Data Forum Calls](community/research-calls.html)
 - Participate in [user testing sessions](community/user-testing.html)
 - Share your [data challenges and needs](community/research-needs.html)
 
-**Technical Community**
-- Contribute to [open source components](https://github.com/inspirelabs)
-- Review and improve [documentation](contributing/docs.html)
-- Participate in [technical working groups](community/working-groups.html)
+
 
 ### **Contact & Support**
 
 - **💬 General Discussion:** [GitHub Discussions](https://github.com/inspirelabs/inspire-platform/discussions)
-- **📧 Research Inquiries:** [research@inspirelabs.org](mailto:research@inspirelabs.org)
-- **🔧 Technical Support:** [support@inspirelabs.org](mailto:support@inspirelabs.org)
+- **📧 Research Inquiries:** [kyle.metta@noaa.gov](mailto:kyle.metta@noaa.gov)
 - **🐛 Bug Reports:** [GitHub Issues](https://github.com/inspirelabs/inspire-platform/issues)
 
 ---
@@ -156,16 +151,15 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 - **AWS Architecture** - Cloud-native infrastructure design completed
 
 ### **Coming Soon**
-- **Beta API Release** - RESTful endpoints for data access and submission
 - **Jupyter Integration** - Notebook environment for collaborative analysis
-- **Mobile Field App** - Data collection tool for field researchers
-- **Machine Learning Toolkit** - Pre-built models for common analysis tasks
+- **Cookbooks** - Binder launchable notebooks and tutorials
+
 
 ---
 
 ## 🏛️ **About NOAA's Social Science Program**
 
-The **Social Science Program (SSP)** within NOAA's Weather Program Office advances the integration of social science research with weather, climate, and water forecasting to improve societal outcomes and decision-making.
+The **Social Science Program (SSP)** within NOAA's Weather Program Office advances the integration of social science research with weather and water forecasting to improve societal outcomes and decision-making.
 
 **Key Goals:**
 - Enhance forecast communication and public understanding
