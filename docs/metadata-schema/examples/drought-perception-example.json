@@ -1,0 +1,59 @@
+{
+  "title": "Farmer Risk Perception During 2019 Midwest Drought",
+  "abstract": "Survey-based study examining how agricultural producers in Iowa, Illinois, and Missouri perceived and responded to drought risk during the 2019 growing season. Includes demographic data, risk perception scales, and behavioral response measures.",
+  "purpose": "To understand how farmers' risk perceptions influence drought preparedness and adaptation strategies, informing agricultural extension services and policy development",
+  "creator": "Dr. Sarah Martinez, Iowa State University",
+  "unique_identifier": "10.5555/drought-perception-2019",
+  "version": "1.0",
+  "contributors": [
+    {
+      "name": "Dr. Michael Chen",
+      "role": "Co-Investigator"
+    },
+    {
+      "name": "Jessica Rodriguez",
+      "role": "Field Data Collector"
+    },
+    {
+      "name": "Iowa Farm Bureau",
+      "role": "Community Partner"
+    }
+  ],
+  "funding_reference": ["USDA NIFA Award #2018-67023-27857", "Iowa State University Extension"],
+  "license": "CC-BY-NC (Attribution-NonCommercial 4.0 International)",
+  "citation_recommendation": "Martinez, S., Chen, M., & Rodriguez, J. (2019). Farmer Risk Perception During 2019 Midwest Drought. Iowa State University. https://doi.org/10.5555/drought-perception-2019",
+  
+  "subject_category": "Risk Perception",
+  "keywords_controlled": ["Social Equity in Disasters"],
+  "keywords_other": ["Agriculture", "Drought Preparedness", "Risk Communication", "Rural Communities", "Farm Management"],
+  "related_datasets": ["https://doi.org/10.5555/midwest-drought-climate-2019", "https://doi.org/10.5555/agricultural-economics-2019"],
+  
+  "geographic_coverage_controlled": ["Midwest", "Rural Communities"],
+  "geographic_coverage_specific": "Agricultural counties in Iowa, Illinois, and Missouri",
+  "coordinate_system": "WGS84",
+  "spatial_resolution": "County level",
+  "temporal_coverage_start": "2019-05-01",
+  "temporal_coverage_end": "2019-10-31",
+  "temporal_resolution": "Single survey with follow-up interviews",
+  
+  "data_type": "Survey Data",
+  "data_format": "CSV, SPSS",
+  "collection_methodology": "Mail survey with phone follow-up, stratified random sampling of farm operators from USDA Census of Agriculture lists",
+  "uncertainty_quantification": "95% confidence intervals provided for all estimates; response rate 34% with non-response bias analysis included",
+  "data_processing": "Data cleaning included outlier detection, missing data imputation using multiple imputation, survey weights calculated for population inference",
+  "provenance": "Raw surveys collected May-October 2019, coded and cleaned November 2019-February 2020, final dataset released June 2020",
+  
+  "use_cases": "Policy Development",
+  "integration_with_other_data": "Can be linked to USDA crop yield data, NOAA drought monitor data, and crop insurance records via county FIPS codes and time periods",
+  
+  "community_engagement": true,
+  "equity_accessibility": true,
+  
+  "data_access_url": "https://example.edu/datasets/drought-perception",
+  "api_endpoint": "https://api.example.edu/agriculture/drought-perception/v1",
+  "file_size": "45 MB",
+  "software_dependencies": "R 4.0+, SPSS 26+, survey package for R",
+  "access_restrictions": "Academic use only, requires data use agreement",
+  "data_sensitivity": true,
+  "retention_policy": "Available for 20 years through Iowa State University Digital Repository with migration guarantee"
+}
