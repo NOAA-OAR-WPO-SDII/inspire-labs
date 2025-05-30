@@ -19,7 +19,7 @@ We're building InSPIRE as a **cloud-native platform on Amazon Web Services (AWS)
 
 This space is for **experiments, feedback, and iteration**. You'll find:
 
-  
+  <div>
   <div class="feature-card">
     <h3> Tutorials</h3>
     <p>Step-by-step guides for working with social science and weather data</p>
