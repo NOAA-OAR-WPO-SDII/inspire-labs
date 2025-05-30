@@ -2,222 +2,243 @@
 
 **Development space for social scientists and SBES datasets related to extreme weather**
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/inspirelabs/inspire-labs)
+[![NOAA](https://img.shields.io/badge/NOAA-Social%20Science%20Program-blue)](https://www.weather.gov/about/social-science-program)
+[![AWS](https://img.shields.io/badge/AWS-Cloud%20Native-orange)](https://aws.amazon.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.0-orange.svg)](CHANGELOG.md)
 
 ---
 
+## 🌟 **What is InSPIRE?**
 
-**InSPIRE Labs** is the development space for the Integrated Societal-data Platform for Interdisciplinary Research and Evaluation — or InSPIRE for short. This platform is a core product of the Societal Data Insights Initiative (SDII) within NOAA's Social Science Program (SSP) at the Weather Program Office (WPO).
+**InSPIRE Labs** is the development space for the **Integrated Societal-data Platform for Interdisciplinary Research and Evaluation** — or InSPIRE for short. This platform is a core product of the **Societal Data Insights Initiative (SDII)** within NOAA's Social Science Program (SSP) at the Weather Program Office (WPO).
 
-We’re building InSPIRE as a cloud-native platform on **Amazon Web Services (AWS)** to support the future of integrated weather and social science research. Our goal is to enable more thoughtful coordination and evaluation by bringing together diverse data sources and disciplinary perspectives.
+We're building InSPIRE as a **cloud-native platform on Amazon Web Services (AWS)** to support the future of integrated weather and social science research. Our goal is to enable more thoughtful coordination and evaluation by bringing together diverse data sources and disciplinary perspectives.
 
-### Why Labs?
+---
 
-This space is for **experiments, feedback, and iteration**. You’ll find:
+## 🧪 **Why Labs?**
 
-- Prototypes of InSPIRE features  
-- Tutorials and cookbooks  
-- Metadata schema discussions  
-- Ongoing design artifacts
+This space is for **experiments, feedback, and iteration**. You'll find:
 
-## InSPIRE Metadata Schema
-
-## ⚡ **Quick Start**
-
-<div class="quick-start-buttons">
-  <a href="#download-templates" class="btn btn-primary">📥 Download Templates</a>
-  <a href="#validate-data" class="btn btn-secondary">✅ Validate Your Data</a>
-  <a href="#examples" class="btn btn-outline">📚 See Examples</a>
+<div class="feature-grid">
+  <div class="feature-card">
+    <h3>🔬 Prototypes</h3>
+    <p>Early versions of InSPIRE platform features for testing and feedback</p>
+    <a href="prototypes/" class="btn-link">Explore Prototypes →</a>
+  </div>
+  
+  <div class="feature-card">
+    <h3>📚 Tutorials</h3>
+    <p>Step-by-step guides for working with social science and weather data</p>
+    <a href="tutorials/" class="btn-link">View Tutorials →</a>
+  </div>
+  
+  <div class="feature-card">
+    <h3>📋 Metadata Schema</h3>
+    <p>Standardized metadata framework for social science weather datasets</p>
+    <a href="metadata-schema/" class="btn-link">Schema Documentation →</a>
+  </div>
+  
+  <div class="feature-card">
+    <h3>🎨 Design Artifacts</h3>
+    <p>User research, wireframes, and design decisions driving platform development</p>
+    <a href="design-artifacts/" class="btn-link">Design Resources →</a>
+  </div>
 </div>
 
 ---
 
-## 📋 **Schema Overview**
+## 📋 **InSPIRE Metadata Schema**
 
-The InSPIRE schema organizes metadata into **7 logical sections**:
+*Comprehensive metadata framework for social science datasets related to weather and climate*
 
-### **1. 🆔 Identification & Overview**
-Core dataset information including title, creators, funding, and licensing.
+The InSPIRE Metadata Schema bridges the gap between meteorological data standards and social science research needs, ensuring datasets are discoverable, citable, and interoperable.
 
-**Key Fields:** `title`, `abstract`, `creator`, `license`, `citation_recommendation`
+### **⚡ Quick Start**
 
-### **2. 🏷️ Subject Classification & Keywords** 
-Domain classification and discoverability tags using controlled vocabularies.
-
-**Key Fields:** `subject_category`, `keywords_controlled`, `keywords_other`
-
-### **3. 🌍 Geographic & Temporal Information**
-Spatial and temporal coverage with flexible location specification.
-
-**Key Fields:** `geographic_coverage_controlled`, `temporal_coverage_start`, `spatial_resolution`
-
-### **4. 📊 Data Characteristics & Methods**
-Collection methodology, data types, and processing history.
-
-**Key Fields:** `data_type`, `collection_methodology`, `uncertainty_quantification`
-
-### **5. 🎯 Decision-Support Attributes**
-Intended applications and integration capabilities.
-
-**Key Fields:** `use_cases`, `integration_with_other_data`
-
-### **6. 🤝 Community Engagement & Ethics**
-Community involvement and ethical considerations.
-
-**Key Fields:** `community_engagement`, `equity_accessibility`
-
-### **7. 🔧 Technical Details & Access**
-Access methods, file formats, and technical requirements.
-
-**Key Fields:** `data_access_url`, `api_endpoint`, `software_dependencies`
-
----
-
-## 📥 **Download Templates** {#download-templates}
-
-Choose your preferred format to get started:
-
-| Format | Best For | Download |
-|--------|----------|----------|
-| **CSV Template** | Quick data entry, pilot testing | [📄 CSV Template](templates/inspire-template.csv) |
-| **JSON Schema** | Validation, tool development | [📄 JSON Schema](schema/inspire-schema.json) |
-| **XML Schema** | Legacy systems, formal validation | [📄 XML Schema](schema/inspire-schema.xsd) |
-| **YAML Documentation** | Human-readable specification | [📄 YAML Docs](schema/inspire-schema.yaml) |
-
----
-
-## ✅ **Validate Your Data** {#validate-data}
-
-Test your metadata against the InSPIRE schema:
-
-<div class="validator-section">
-  <p><strong>🔧 Online Validator</strong> - <a href="tools/validator.html">Validate your JSON/CSV data</a></p>
-  <p><strong>📋 Checklist</strong> - <a href="validation-checklist.html">Manual validation checklist</a></p>
-  <p><strong>⚡ Quick Check</strong> - Required fields: title, abstract, creator, subject_category, geographic_coverage_controlled, temporal_coverage_start</p>
+<div class="quick-actions">
+  <a href="metadata-schema/templates/inspire-template.csv" class="btn btn-primary">📥 Download CSV Template</a>
+  <a href="metadata-schema/tools/validator.html" class="btn btn-secondary">✅ Validate Your Data</a>
+  <a href="metadata-schema/examples/" class="btn btn-outline">📚 See Examples</a>
+  <a href="metadata-schema/" class="btn btn-outline">📖 Full Documentation</a>
 </div>
 
----
+### **🎯 Schema Highlights**
 
-## 📚 **Examples** {#examples}
-
-Real-world examples showing the schema in action:
-
-### 🌀 **Hurricane Harvey Social Media Dataset**
-```json
-{
-  "title": "Hurricane Harvey Social Media Response Dataset",
-  "subject_category": "Emergency Management",
-  "geographic_coverage_controlled": ["Gulf Coast", "Urban Areas"],
-  "geographic_coverage_specific": "Houston Metropolitan Area, Texas",
-  "data_type": "Text Analysis",
-  "use_cases": "Public Risk Communication"
-}
-```
-[📄 View Complete Example](examples/hurricane-harvey-example.json)
-
-### 🌾 **Midwest Drought Perception Study**
-```json
-{
-  "title": "Farmer Risk Perception During 2019 Midwest Drought",
-  "subject_category": "Risk Perception", 
-  "geographic_coverage_controlled": ["Midwest", "Rural Communities"],
-  "data_type": "Survey Data",
-  "community_engagement": true
-}
-```
-[📄 View Complete Example](examples/drought-perception-example.json)
-
-### 🏙️ **Urban Heat Island Social Vulnerability**
-```json
-{
-  "title": "Social Vulnerability to Urban Heat Islands in Phoenix",
-  "subject_category": "Social Vulnerability",
-  "geographic_coverage_controlled": ["Urban Areas"],
-  "data_type": "Geospatial Data",
-  "equity_accessibility": true
-}
-```
-[📄 View Complete Example](examples/urban-heat-example.json)
+- **7 logical sections** organizing 34+ metadata fields
+- **Controlled vocabularies** for consistency and discoverability  
+- **Standards compliance** with DDI, ISO 19115, and DataCite
+- **Community engagement** and **equity considerations** built-in
+- **Flexible format support** (JSON, XML, CSV)
 
 ---
 
-## 🎓 **Getting Started Guide**
+## 🚀 **Platform Development**
+
+### **Current Focus Areas**
+
+**Data Integration Pipeline**
+- Automated ingestion from multiple social science data sources
+- Real-time weather data integration via NOAA APIs
+- Quality assurance and validation workflows
+
+**User Interface Design**
+- Researcher-friendly data discovery and visualization
+- Collaborative analysis tools
+- Mobile-responsive design for field research
+
+**Community Features**
+- Discussion forums for cross-disciplinary collaboration
+- Shared methodology repositories
+- Best practices documentation
+
+### **Technology Stack**
+
+- **Cloud Infrastructure:** Amazon Web Services (AWS)
+- **Data Storage:** S3, RDS, DynamoDB
+- **Processing:** Lambda, EC2, SageMaker
+- **API:** RESTful services with GraphQL
+- **Frontend:** Modern web frameworks with accessibility focus
+
+---
+
+## 📖 **Resources**
+
+### **Getting Started**
+- [📘 Platform Overview](overview.html) - High-level introduction to InSPIRE
+- [🔧 Technical Architecture](architecture.html) - System design and components
+- [👥 User Personas](personas.html) - Who we're building for
+- [🗺️ Roadmap](roadmap.html) - Upcoming features and milestones
 
 ### **For Researchers**
-1. **Download** the [CSV template](templates/inspire-template.csv)
-2. **Fill out** your dataset metadata
-3. **Validate** using our [online tool](tools/validator.html)
-4. **Export** to JSON for repository submission
+- [📊 Data Standards](metadata-schema/) - Metadata schema documentation
+- [💡 Use Cases](use-cases.html) - Real-world application examples
+- [📝 Best Practices](best-practices.html) - Research methodology guidance
+- [🤝 Community Guidelines](community.html) - Collaboration expectations
 
-### **For Data Managers**
-1. **Review** the [JSON Schema](schema/inspire-schema.json)
-2. **Test** integration with your repository software
-3. **Configure** field mappings for automated ingestion
-4. **Implement** validation in your data submission workflow
-
-### **For Tool Developers**
-1. **Examine** the [schema structure](schema-documentation.html)
-2. **Use** the JSON Schema for validation
-3. **Implement** section-based form interfaces
-4. **Contribute** improvements via GitHub issues
+### **For Developers**
+- [🔌 API Documentation](api-docs.html) - Integration specifications
+- [📦 SDK Downloads](sdk.html) - Development tools and libraries
+- [🧪 Sandbox Environment](sandbox.html) - Testing and experimentation
+- [🐛 Issue Tracking](https://github.com/inspirelabs/inspire-platform/issues) - Bug reports and feature requests
 
 ---
 
-## 📖 **Documentation**
-
-| Resource | Description |
-|----------|-------------|
-| [📚 Complete Field Reference](field-reference.html) | Detailed description of every field |
-| [📝 Controlled Vocabularies](controlled-vocabularies.html) | All standardized terms and enums |
-| [🔧 Implementation Guide](implementation-guide.html) | Technical integration details |
-| [❓ FAQ](faq.html) | Common questions and answers |
-| [📊 Standards Compliance](standards-compliance.html) | Mapping to DDI, ISO 19115, DataCite |
-
----
-
-## 🤝 **Community & Support**
+## 🤝 **Community & Collaboration**
 
 ### **Get Involved**
-- **💬 Discussions:** [GitHub Discussions](https://github.com/inspirelabs/inspire-metadata-schema/discussions)
-- **🐛 Issues:** [Report bugs or request features](https://github.com/inspirelabs/inspire-metadata-schema/issues)
-- **📧 Contact:** [inspire-schema@yourlabs.org](mailto:inspire-schema@yourlabs.org)
 
-### **Contributing**
-We welcome contributions! See our [Contributing Guide](CONTRIBUTING.md) for details.
+**Research Community**
+- Join our [monthly research calls](community/research-calls.html)
+- Participate in [user testing sessions](community/user-testing.html)
+- Share your [data challenges and needs](community/research-needs.html)
 
-### **Citing InSPIRE**
-```
-InSPIRE Labs. (2025). InSPIRE Metadata Schema for Social Science Weather Data. 
-Version 1.0. https://inspirelabs.github.io/inspire-metadata-schema/
-```
+**Technical Community**
+- Contribute to [open source components](https://github.com/inspirelabs)
+- Review and improve [documentation](contributing/docs.html)
+- Participate in [technical working groups](community/working-groups.html)
+
+### **Contact & Support**
+
+- **💬 General Discussion:** [GitHub Discussions](https://github.com/inspirelabs/inspire-platform/discussions)
+- **📧 Research Inquiries:** [research@inspirelabs.org](mailto:research@inspirelabs.org)
+- **🔧 Technical Support:** [support@inspirelabs.org](mailto:support@inspirelabs.org)
+- **🐛 Bug Reports:** [GitHub Issues](https://github.com/inspirelabs/inspire-platform/issues)
 
 ---
 
-## 📄 **License**
+## 📅 **Latest Updates**
+
+### **Recent Developments**
+- **v1.0 Metadata Schema** - Complete field specification with controlled vocabularies
+- **Prototype Data Viewer** - Interactive visualization tool for weather-social data
+- **Community Feedback Portal** - Streamlined input collection from researchers
+- **AWS Architecture** - Cloud-native infrastructure design completed
+
+### **Coming Soon**
+- **Beta API Release** - RESTful endpoints for data access and submission
+- **Jupyter Integration** - Notebook environment for collaborative analysis
+- **Mobile Field App** - Data collection tool for field researchers
+- **Machine Learning Toolkit** - Pre-built models for common analysis tasks
+
+---
+
+## 🏛️ **About NOAA's Social Science Program**
+
+The **Social Science Program (SSP)** within NOAA's Weather Program Office advances the integration of social science research with weather, climate, and water forecasting to improve societal outcomes and decision-making.
+
+**Key Goals:**
+- Enhance forecast communication and public understanding
+- Improve decision-support tools for emergency management
+- Advance equity and accessibility in weather services
+- Foster interdisciplinary research collaborations
+
+Learn more about [NOAA's Social Science Program](https://www.weather.gov/about/social-science-program).
+
+---
+
+## 📄 **Acknowledgments**
+
+InSPIRE Labs is supported by:
+- **NOAA Weather Program Office** - Primary funding and institutional support
+- **Social Science Program** - Research guidance and community connections
+- **Societal Data Insights Initiative** - Strategic direction and oversight
+- **Research Community Partners** - Ongoing feedback and collaboration
+
+---
+
+## 📜 **License & Use**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+**Citation:**
+```
+InSPIRE Labs. (2025). Integrated Societal-data Platform for Interdisciplinary 
+Research and Evaluation. NOAA Weather Program Office. 
+https://inspirelabs.github.io/inspire-labs/
+```
+
 ---
 
-<div class="footer-note">
-<p><strong>InSPIRE Labs</strong> | Bridging Social Science and Weather Data</p>
-<p>Created with ❤️ for the research community</p>
+<div class="footer-cta">
+  <h3>🚀 Ready to Get Started?</h3>
+  <p>Explore our <a href="metadata-schema/">metadata schema</a>, try our <a href="prototypes/">prototypes</a>, or <a href="mailto:research@inspirelabs.org">get in touch</a> to learn more about InSPIRE.</p>
 </div>
 
 <style>
-.quick-start-buttons {
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.feature-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   margin: 20px 0;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  margin: 5px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  text-align: center;
 }
 
 .btn-primary {
@@ -236,35 +257,40 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   border: 2px solid #007bff;
 }
 
-.validator-section {
-  background-color: #f8f9fa;
-  padding: 15px;
-  border-radius: 5px;
-  margin: 15px 0;
+.btn-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.footer-note {
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.footer-cta {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
   text-align: center;
   margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
-  color: #666;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 15px 0;
+.footer-cta a {
+  color: #b3d9ff;
 }
 
-table th, table td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: left;
+.footer-cta a:hover {
+  color: white;
 }
 
-table th {
-  background-color: #f2f2f2;
-  font-weight: bold;
+@media (max-width: 768px) {
+  .quick-actions {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
 }
 </style>
