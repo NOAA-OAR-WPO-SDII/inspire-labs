@@ -1,0 +1,45 @@
+title: InSPIRE Labs
+description: Development space for social scientists and SBES datasets related to extreme weather
+url: https://mettakyle.github.io  # Update with your username
+baseurl: /inspire-labs  
+
+theme: minima
+
+# Navigation
+header_pages:
+  - index.md
+  - metadata-schema/index.md
+  - tutorials/index.md
+  - design-artifacts/index.md
+
+# Site settings
+author: InSPIRE Labs
+email: kyle.metta@noaa.gov 
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Collections for better organization
+collections:
+  metadata_examples:
+    output: true
+    permalink: /metadata-schema/examples/:name/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "metadata-schema"
+      type: "pages"
+    values:
+      layout: "page"
