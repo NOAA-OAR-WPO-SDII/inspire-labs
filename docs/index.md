@@ -129,9 +129,9 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 
 ### **Contact & Support**
 
-- **💬 General Discussion:** [GitHub Discussions](https://github.com/inspirelabs/inspire-platform/discussions)
+- **💬 General Discussion:** [GitHub Discussions](https://github.com/mettakyle/inspire-labs/discussions)
 - **📧 Research Inquiries:** [kyle.metta@noaa.gov](mailto:kyle.metta@noaa.gov)
-- **🐛 Bug Reports:** [GitHub Issues](https://github.com/inspirelabs/inspire-platform/issues)
+- **🐛 Bug Reports:** [GitHub Issues](https://github.com/mettakyle/inspirelabs/inspire-platform/issues)
 
 ---
 
