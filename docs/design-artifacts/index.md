@@ -10,7 +10,7 @@
 
 Our design process is driven by the needs of social scientists working with weather and climate data. We're documenting our research and decisions here for transparency and community input.
 
-### **🚧 Coming Soon**
+### ** Coming Soon**
 - **User Research Findings** - Interviews with social scientists and data managers
 
 - **Accessibility Guidelines** - Ensuring inclusive design for all researchers
