@@ -10,13 +10,13 @@
 
 ---
 
-## 🎯 **Overview**
+##  **Overview**
 
 The InSPIRE Metadata Schema bridges the gap between meteorological data standards and social science research needs, ensuring your datasets are discoverable, citable, and interoperable. It organizes metadata into **7 logical sections** with **34+ fields** and built-in controlled vocabularies.
 
 ---
 
-## ⚡ **Quick Start**
+##  **Quick Start**
 
 <div class="quick-start-section">
   <div class="quick-option">
@@ -41,7 +41,7 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 
 ---
 
-## 📋 **Schema Structure**
+##  **Schema Structure**
 
 The schema organizes metadata into **7 logical sections**:
 
