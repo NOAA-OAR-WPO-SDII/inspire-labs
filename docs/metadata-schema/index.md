@@ -213,7 +213,7 @@ Test your metadata against the InSPIRE schema with our interactive validation to
 ### **Get Involved**
 - ** Schema Discussions:** [GitHub Discussions](https://github.com/inspirelabs/inspire-labs/discussions)
 - ** Report Issues:** [GitHub Issues](https://github.com/inspirelabs/inspire-labs/issues)
-- ** Schema Questions:** [schema@inspirelabs.org](mailto:schema@inspirelabs.org)
+- ** Schema Questions:** [kyle.metta@noaa.gov](mailto:kyle.metta@noaa.gov)
 
 ### **Contributing**
 We welcome contributions to improve the schema:
