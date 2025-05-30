@@ -211,8 +211,8 @@ Test your metadata against the InSPIRE schema with our interactive validation to
 ##  **Community & Support**
 
 ### **Get Involved**
-- ** Schema Discussions:** [GitHub Discussions](https://github.com/inspirelabs/inspire-labs/discussions)
-- ** Report Issues:** [GitHub Issues](https://github.com/inspirelabs/inspire-labs/issues)
+- ** Schema Discussions:** [GitHub Discussions](https://github.com/mettakyle/inspire-labs/discussions)
+- ** Report Issues:** [GitHub Issues](https://github.com/mettakyle/inspirelabs/inspire-labs/issues)
 - ** Schema Questions:** [kyle.metta@noaa.gov](mailto:kyle.metta@noaa.gov)
 
 ### **Contributing**
