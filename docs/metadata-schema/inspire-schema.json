@@ -1,0 +1,426 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://inspirelabs.github.io/metadata-schema/inspire-schema.json",
+  "title": "InSPIRE Metadata Schema",
+  "description": "Comprehensive metadata schema for social science datasets related to weather and climate",
+  "version": "1.0",
+  "type": "object",
+  
+  "properties": {
+    
+    // Section 1: Identification & Overview
+    "title": {
+      "type": "string",
+      "title": "Title",
+      "description": "Concise dataset name",
+      "x-section": "identification_overview"
+    },
+    "abstract": {
+      "type": "string",
+      "title": "Abstract",
+      "description": "Summary of dataset content, purpose, and scope",
+      "x-section": "identification_overview"
+    },
+    "purpose": {
+      "type": "string",
+      "title": "Purpose", 
+      "description": "Explanation of why the dataset was collected",
+      "x-section": "identification_overview"
+    },
+    "creator": {
+      "type": "string",
+      "title": "Creator",
+      "description": "Name(s) of the individual(s) or org(s) who created the dataset",
+      "x-section": "identification_overview"
+    },
+    "unique_identifier": {
+      "type": "string",
+      "title": "Unique Identifier",
+      "description": "Persistent, citable reference (DOI, handle, etc.)",
+      "x-section": "identification_overview"
+    },
+    "version": {
+      "type": "string", 
+      "title": "Version",
+      "description": "Dataset version and update history",
+      "x-section": "identification_overview"
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "role": {
+            "type": "string",
+            "enum": [
+              "Principal Investigator (PI)",
+              "Co-Investigator", 
+              "Data Manager",
+              "Field Data Collector",
+              "Metadata Curator",
+              "Software Developer",
+              "Modeler",
+              "Data Analyst", 
+              "Community Partner",
+              "Other"
+            ]
+          },
+          "role_description": {"type": "string"}
+        },
+        "required": ["name", "role"]
+      },
+      "title": "Contributors",
+      "description": "People or organizations who contributed to dataset creation",
+      "x-section": "identification_overview"
+    },
+    "funding_reference": {
+      "type": "array",
+      "items": {"type": "string"},
+      "title": "Funding Reference",
+      "description": "Information about funding sources supporting dataset creation",
+      "x-section": "identification_overview" 
+    },
+    "license": {
+      "type": "string",
+      "enum": [
+        "CC0 (Public Domain Dedication)",
+        "CC-BY (Attribution 4.0 International)",
+        "CC-BY-SA (Attribution-ShareAlike 4.0 International)", 
+        "CC-BY-NC (Attribution-NonCommercial 4.0 International)",
+        "CC-BY-ND (Attribution-NoDerivs 4.0 International)",
+        "Open Data Commons Open Database License (ODbL)",
+        "Proprietary",
+        "Government Public Data (U.S. Federal Only)",
+        "Other"
+      ],
+      "title": "License",
+      "description": "Terms of use for the dataset",
+      "x-section": "identification_overview"
+    },
+    "license_custom_terms": {
+      "type": "string",
+      "title": "Custom License Terms",
+      "description": "Required if license is 'Other' or 'Proprietary'",
+      "x-section": "identification_overview"
+    },
+    "citation_recommendation": {
+      "type": "string",
+      "title": "Citation Recommendation",
+      "description": "Suggested citation format for the dataset",
+      "x-section": "identification_overview"
+    },
+
+    // Section 2: Subject Classification & Keywords  
+    "subject_category": {
+      "type": "string",
+      "enum": [
+        "Risk Perception",
+        "Emergency Management",
+        "Climate Adaptation",
+        "Impact-Based Forecasting", 
+        "Social Vulnerability",
+        "Weather Communication",
+        "Hydrometeorology",
+        "Economic Impacts",
+        "Public Health & Weather"
+      ],
+      "title": "Subject Category",
+      "description": "Broad domain classification from controlled vocabulary",
+      "x-section": "subject_classification"
+    },
+    "keywords_controlled": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Flood Risk",
+          "Hurricane Preparedness",
+          "Wildfire Impact", 
+          "Tornado Forecasting",
+          "Power Outages",
+          "Social Equity in Disasters",
+          "GIS Mapping",
+          "Crowd-Sourced Observations"
+        ]
+      },
+      "title": "Keywords (Controlled)",
+      "description": "Specific tags from controlled vocabulary",
+      "x-section": "subject_classification"
+    },
+    "keywords_other": {
+      "type": "array", 
+      "items": {"type": "string"},
+      "title": "Keywords (Other)",
+      "description": "Custom keywords for discoverability",
+      "x-section": "subject_classification"
+    },
+    "related_datasets": {
+      "type": "array",
+      "items": {"type": "string"},
+      "title": "Related Datasets", 
+      "description": "Links to datasets that complement this one",
+      "x-section": "subject_classification"
+    },
+
+    // Section 3: Geographic & Temporal Information
+    "geographic_coverage_controlled": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "United States",
+          "Coastal Regions", 
+          "Midwest",
+          "Gulf Coast",
+          "Urban Areas",
+          "Rural Communities",
+          "River Basins"
+        ]
+      },
+      "title": "Geographic Coverage (Controlled)",
+      "description": "Broad geographic categories",
+      "x-section": "geographic_temporal"
+    },
+    "geographic_coverage_specific": {
+      "type": "string",
+      "title": "Geographic Coverage (Specific)",
+      "description": "Exact location description",
+      "x-section": "geographic_temporal"
+    },
+    "coordinate_system": {
+      "type": "string",
+      "title": "Coordinate System",
+      "description": "Coordinate system used",
+      "x-section": "geographic_temporal"
+    },
+    "spatial_resolution": {
+      "type": "string",
+      "title": "Spatial Resolution", 
+      "description": "Level of detail in spatial data",
+      "x-section": "geographic_temporal"
+    },
+    "temporal_coverage_start": {
+      "type": "string",
+      "format": "date",
+      "title": "Temporal Coverage Start",
+      "description": "Start date of time period covered",
+      "x-section": "geographic_temporal"
+    },
+    "temporal_coverage_end": {
+      "type": "string",
+      "format": "date", 
+      "title": "Temporal Coverage End",
+      "description": "End date of time period covered",
+      "x-section": "geographic_temporal"
+    },
+    "temporal_resolution": {
+      "type": "string",
+      "title": "Temporal Resolution",
+      "description": "Frequency of data collection",
+      "x-section": "geographic_temporal"
+    },
+
+    // Section 4: Data Characteristics & Methods
+    "data_type": {
+      "type": "string",
+      "enum": [
+        "Survey Data",
+        "Satellite Observations",
+        "Model Simulations",
+        "Text Analysis",
+        "Geospatial Data", 
+        "Sensor Networks",
+        "Administrative Data",
+        "Other"
+      ],
+      "title": "Data Type",
+      "description": "Nature of the data collected",
+      "x-section": "data_characteristics"
+    },
+    "data_format": {
+      "type": "string",
+      "title": "Data Format",
+      "description": "File format for interoperability",
+      "x-section": "data_characteristics"
+    },
+    "collection_methodology": {
+      "type": "string",
+      "title": "Collection Methodology",
+      "description": "How the data were obtained",
+      "x-section": "data_characteristics"
+    },
+    "uncertainty_quantification": {
+      "type": "string",
+      "title": "Uncertainty Quantification",
+      "description": "Measures of accuracy, error margins",
+      "x-section": "data_characteristics"
+    },
+    "data_processing": {
+      "type": "string",
+      "title": "Data Processing",
+      "description": "Cleaning, transformations, or analyses applied",
+      "x-section": "data_characteristics"
+    },
+    "provenance": {
+      "type": "string", 
+      "title": "Provenance",
+      "description": "Documentation of changes made over time",
+      "x-section": "data_characteristics"
+    },
+
+    // Section 5: Decision-Support Attributes
+    "use_cases": {
+      "type": "string",
+      "enum": [
+        "Evacuation Planning",
+        "Hazard Mitigation",
+        "Public Risk Communication",
+        "Climate Resilience Research",
+        "Infrastructure Risk Assessment",
+        "Policy Development",
+        "Economic Risk Modeling",
+        "Other"
+      ],
+      "title": "Use Cases",
+      "description": "Intended applications of the data",
+      "x-section": "decision_support"
+    },
+    "integration_with_other_data": {
+      "type": "string",
+      "title": "Integration with Other Data",
+      "description": "How this dataset links to others",
+      "x-section": "decision_support"
+    },
+
+    // Section 6: Community Engagement & Ethical Considerations  
+    "community_engagement": {
+      "type": "boolean",
+      "title": "Community Engagement",
+      "description": "Whether local knowledge was incorporated",
+      "x-section": "community_ethics"
+    },
+    "equity_accessibility": {
+      "type": "boolean", 
+      "title": "Equity & Accessibility",
+      "description": "Considerations for vulnerable communities",
+      "x-section": "community_ethics"
+    },
+
+    // Section 7: Technical Details & Access
+    "data_access_url": {
+      "type": "string",
+      "format": "uri",
+      "title": "Data Access URL", 
+      "description": "Link to dataset",
+      "x-section": "technical_access"
+    },
+    "api_endpoint": {
+      "type": "string",
+      "format": "uri",
+      "title": "API Endpoint",
+      "description": "URL for automated access",
+      "x-section": "technical_access"
+    },
+    "file_size": {
+      "type": "string",
+      "title": "File Size",
+      "description": "Total dataset size",
+      "x-section": "technical_access"
+    },
+    "software_dependencies": {
+      "type": "string",
+      "title": "Software Dependencies",
+      "description": "Required tools for use",
+      "x-section": "technical_access"
+    },
+    "access_restrictions": {
+      "type": "string",
+      "title": "Access Restrictions",
+      "description": "Any limitations on dataset access",
+      "x-section": "technical_access"
+    },
+    "data_sensitivity": {
+      "type": "boolean",
+      "title": "Data Sensitivity",
+      "description": "Does data contain sensitive information",
+      "x-section": "technical_access"
+    },
+    "retention_policy": {
+      "type": "string",
+      "title": "Retention Policy", 
+      "description": "Long-term availability and storage duration",
+      "x-section": "technical_access"
+    }
+  },
+
+  "required": [
+    "title",
+    "abstract", 
+    "creator",
+    "subject_category",
+    "geographic_coverage_controlled",
+    "temporal_coverage_start"
+  ],
+
+  "x-sections": {
+    "identification_overview": {
+      "title": "1. Identification & Overview",
+      "description": "Core dataset identification and attribution information",
+      "standards": ["DDI", "ISO 19115", "DataCite"],
+      "fields": [
+        "title", "abstract", "purpose", "creator", "unique_identifier", 
+        "version", "contributors", "funding_reference", "license", 
+        "license_custom_terms", "citation_recommendation"
+      ]
+    },
+    "subject_classification": {
+      "title": "2. Subject Classification & Keywords", 
+      "description": "Domain classification and discoverability tags",
+      "standards": ["DDI", "NOAA Glossary"],
+      "fields": [
+        "subject_category", "keywords_controlled", "keywords_other", "related_datasets"
+      ]
+    },
+    "geographic_temporal": {
+      "title": "3. Geographic & Temporal Information",
+      "description": "Spatial and temporal coverage details", 
+      "standards": ["ISO 19115", "DDI"],
+      "fields": [
+        "geographic_coverage_controlled", "geographic_coverage_specific",
+        "coordinate_system", "spatial_resolution", "temporal_coverage_start",
+        "temporal_coverage_end", "temporal_resolution"
+      ]
+    },
+    "data_characteristics": {
+      "title": "4. Data Characteristics & Methods",
+      "description": "Data collection methods and processing details",
+      "standards": ["DDI", "ISO 19115"],
+      "fields": [
+        "data_type", "data_format", "collection_methodology", 
+        "uncertainty_quantification", "data_processing", "provenance"
+      ]
+    },
+    "decision_support": {
+      "title": "5. Decision-Support Attributes",
+      "description": "Intended applications and integration capabilities",
+      "standards": ["Domain-Specific"],
+      "fields": ["use_cases", "integration_with_other_data"]
+    },
+    "community_ethics": {
+      "title": "6. Community Engagement & Ethical Considerations",
+      "description": "Community involvement and ethical considerations",
+      "standards": ["Domain-Specific", "IRB Guidelines"],
+      "fields": ["community_engagement", "equity_accessibility"]
+    },
+    "technical_access": {
+      "title": "7. Technical Details & Access",
+      "description": "Access methods and technical requirements",
+      "standards": ["ISO 19115", "DDI"],
+      "fields": [
+        "data_access_url", "api_endpoint", "file_size", "software_dependencies",
+        "access_restrictions", "data_sensitivity", "retention_policy"
+      ]
+    }
+  }
+}
