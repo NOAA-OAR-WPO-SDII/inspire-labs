@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InSPIRE Schema Validator</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .input-section {
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        textarea, input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        
+        textarea {
+            height: 200px;
+            resize: vertical;
+        }
+        
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .btn-secondary {
+            background-color: #6c757d;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #545b62;
+        }
+        
+        .results {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        
+        .error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        
+        .warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+        }
+        
+        .validation-item {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        
+        .validation-item.success {
+            background-color: #d1f2eb;
+            border-left: 4px solid #28a745;
+        }
+        
+        .validation-item.error {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .validation-item.warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            background: #f8f9fa;
+            border: none;
+            cursor: pointer;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .tab.active {
+            background: white;
+            border-bottom: 2px solid white;
+            margin-bottom: -2px;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .example {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+        .required-fields {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .field-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .field-item {
+            background: white;
+            padding: 8px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔍 InSPIRE Schema Validator</h1>
+        <p>Validate your metadata against the InSPIRE schema</p>
+    </div>
+
+    <div class="container">
+        <!-- Required Fields Info -->
+        <div class="required-fields">
+            <h3>📋 Required Fields</h3>
+            <p>Your metadata must include these fields to pass validation:</p>
+            <div class="field-list">
+                <div class="field-item">title</div>
+                <div class="field-item">abstract</div>
+                <div class="field-item">creator</div>
+                <div class="field-item">subject_category</div>
+                <div class="field-item">geographic_coverage_controlled</div>
+                <div class="field-item">temporal_coverage_start</div>
+            </div>
+        </div>
+
+        <!-- Input Tabs -->
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('json')">JSON Input</button>
+            <button class="tab" onclick="switchTab('csv')">CSV Upload</button>
+        </div>
+
+        <!-- JSON Input -->
+        <div id="json-tab" class="tab-content active">
+            <div class="form-group">
+                <label for="jsonInput">Paste your JSON metadata here:</label>
+                <textarea id="jsonInput" placeholder='{"title": "Your Dataset Title", "abstract": "Your dataset description...", ...}'></textarea>
+            </div>
+            <div class="example">
+                <strong>Example JSON:</strong>
+                <pre>{
+  "title": "Hurricane Harvey Social Media Response Dataset",
+  "abstract": "Analysis of social media responses during Hurricane Harvey",
+  "creator": "Dr. Jane Smith, University of Texas",
+  "subject_category": "Emergency Management",
+  "geographic_coverage_controlled": ["Gulf Coast"],
+  "temporal_coverage_start": "2017-08-25"
+}</pre>
+            </div>
+        </div>
+
+        <!-- CSV Upload -->
+        <div id="csv-tab" class="tab-content">
+            <div class="form-group">
+                <label for="csvFile">Upload your CSV file:</label>
+                <input type="file" id="csvFile" accept=".csv" />
+            </div>
+            <p><a href="../templates/inspire-template.csv" target="_blank">📥 Download CSV Template</a></p>
+        </div>
+
+        <!-- Validation Button -->
+        <button class="btn" onclick="validateData()">🔍 Validate Metadata</button>
+        <button class="btn btn-secondary" onclick="clearAll()">🗑️ Clear</button>
+
+        <!-- Results -->
+        <div id="results" class="results">
+            <h3>Validation Results</h3>
+            <div id="validation-content"></div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching
+        function switchTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(tabName + '-tab').classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Clear all inputs
+        function clearAll() {
+            document.getElementById('jsonInput').value = '';
+            document.getElementById('csvFile').value = '';
+            document.getElementById('results').style.display = 'none';
+        }
+
+        // Main validation function
+        function validateData() {
+            const activeTab = document.querySelector('.tab.active').textContent.toLowerCase();
+            
+            if (activeTab.includes('json')) {
+                validateJSON();
+            } else {
+                validateCSV();
+            }
+        }
+
+        // JSON validation
+        function validateJSON() {
+            const jsonInput = document.getElementById('jsonInput').value.trim();
+            
+            if (!jsonInput) {
+                showResults('error', 'Please enter JSON data to validate.');
+                return;
+            }
+
+            try {
+                const data = JSON.parse(jsonInput);
+                performValidation(data);
+            } catch (error) {
+                showResults('error', `Invalid JSON format: ${error.message}`);
+            }
+        }
+
+        // CSV validation
+        function validateCSV() {
+            const fileInput = document.getElementById('csvFile');
+            const file = fileInput.files[0];
+            
+            if (!file) {
+                showResults('error', 'Please select a CSV file to validate.');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const csvData = parseCSV(e.target.result);
+                    performValidation(csvData);
+                } catch (error) {
+                    showResults('error', `Error parsing CSV: ${error.message}`);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        // Simple CSV parser
+        function parseCSV(csvText) {
+            const lines = csvText.split('\n');
+            const data = {};
+            
+            for (let line of lines) {
+                if (line.trim()) {
+                    const [field, value] = line.split(',').map(s => s.trim().replace(/"/g, ''));
+                    if (field && value && field !== 'Field') {
+                        // Convert section prefixes to field names
+                        const cleanField = field.replace(/^\d+\.\s*[^,]*,\s*/, '').replace(/\s+/g, '_').toLowerCase();
+                        data[cleanField] = value;
+                    }
+                }
+            }
+            
+            return data;
+        }
+
+        // Core validation logic
+        function performValidation(data) {
+            const results = [];
+            let score = 0;
+            let maxScore = 0;
+
+            // Required fields
+            const requiredFields = [
+                'title', 'abstract', 'creator', 'subject_category', 
+                'geographic_coverage_controlled', 'temporal_coverage_start'
+            ];
+
+            // Check required fields
+            for (let field of requiredFields) {
+                maxScore++;
+                if (data[field] && data[field].toString().trim()) {
+                    results.push({
+                        type: 'success',
+                        message: `✅ Required field "${field}" is present`
+                    });
+                    score++;
+                } else {
+                    results.push({
+                        type: 'error',
+                        message: `❌ Missing required field: "${field}"`
+                    });
+                }
+            }
+
+            // Check controlled vocabularies
+            const controlledVocabs = {
+                'subject_category': [
+                    'Risk Perception', 'Emergency Management', 'Climate Adaptation',
+                    'Impact-Based Forecasting', 'Social Vulnerability', 'Weather Communication',
+                    'Hydrometeorology', 'Economic Impacts', 'Public Health & Weather'
+                ],
+                'license': [
+                    'CC0 (Public Domain Dedication)', 'CC-BY (Attribution 4.0 International)',
+                    'CC-BY-SA (Attribution-ShareAlike 4.0 International)', 
+                    'CC-BY-NC (Attribution-NonCommercial 4.0 International)',
+                    'CC-BY-ND (Attribution-NoDerivs 4.0 International)',
+                    'Open Data Commons Open Database License (ODbL)', 'Proprietary',
+                    'Government Public Data (U.S. Federal Only)', 'Other'
+                ]
+            };
+
+            for (let [field, vocab] of Object.entries(controlledVocabs)) {
+                if (data[field]) {
+                    if (vocab.includes(data[field])) {
+                        results.push({
+                            type: 'success',
+                            message: `✅ "${field}" uses valid controlled vocabulary term`
+                        });
+                    } else {
+                        results.push({
+                            type: 'warning',
+                            message: `⚠️ "${field}" value "${data[field]}" is not from controlled vocabulary`
+                        });
+                    }
+                }
+            }
+
+            // Check date format
+            if (data.temporal_coverage_start) {
+                const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+                if (dateRegex.test(data.temporal_coverage_start)) {
+                    results.push({
+                        type: 'success',
+                        message: '✅ Temporal coverage start date format is correct (YYYY-MM-DD)'
+                    });
+                } else {
+                    results.push({
+                        type: 'warning',
+                        message: '⚠️ Temporal coverage start date should use YYYY-MM-DD format'
+                    });
+                }
+            }
+
+            // Check for recommended fields
+            const recommendedFields = ['license', 'unique_identifier', 'keywords_controlled'];
+            for (let field of recommendedFields) {
+                if (!data[field] || !data[field].toString().trim()) {
+                    results.push({
+                        type: 'warning',
+                        message: `⚠️ Recommended field "${field}" is missing`
+                    });
+                }
+            }
+
+            // Count total fields
+            const totalFields = Object.keys(data).filter(key => data[key] && data[key].toString().trim()).length;
+            
+            // Calculate completeness percentage
+            const completeness = Math.round((score / requiredFields.length) * 100);
+            
+            // Show results
+            showValidationResults(results, {
+                score: score,
+                maxScore: requiredFields.length,
+                completeness: completeness,
+                totalFields: totalFields,
+                valid: score === requiredFields.length
+            });
+        }
+
+        // Display validation results
+        function showValidationResults(results, stats) {
+            const resultsDiv = document.getElementById('results');
+            const contentDiv = document.getElementById('validation-content');
+            
+            let html = '';
+            
+            // Stats
+            html += `
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.completeness}%</div>
+                        <div class="stat-label">Completeness</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.score}/${stats.maxScore}</div>
+                        <div class="stat-label">Required Fields</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.totalFields}</div>
+                        <div class="stat-label">Total Fields</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.valid ? '✅' : '❌'}</div>
+                        <div class="stat-label">Valid</div>
+                    </div>
+                </div>
+            `;
+
+            // Individual results
+            for (let result of results) {
+                html += `<div class="validation-item ${result.type}">${result.message}</div>`;
+            }
+
+            contentDiv.innerHTML = html;
+            resultsDiv.className = `results ${stats.valid ? 'success' : 'warning'}`;
+            resultsDiv.style.display = 'block';
+        }
+
+        // Show simple results
+        function showResults(type, message) {
+            const resultsDiv = document.getElementById('results');
+            const contentDiv = document.getElementById('validation-content');
+            
+            contentDiv.innerHTML = `<div class="validation-item ${type}">${message}</div>`;
+            resultsDiv.className = `results ${type}`;
+            resultsDiv.style.display = 'block';
+        }
+
+        // Auto-populate example on page load
+        window.onload = function() {
+            const exampleJSON = `{
+  "title": "Hurricane Harvey Social Media Response Dataset",
+  "abstract": "Analysis of social media responses during Hurricane Harvey, focusing on community resilience and information sharing patterns",
+  "creator": "Dr. Jane Smith, University of Texas at Austin",
+  "subject_category": "Emergency Management",
+  "geographic_coverage_controlled": ["Gulf Coast", "Urban Areas"],
+  "temporal_coverage_start": "2017-08-25",
+  "temporal_coverage_end": "2017-09-15",
+  "data_type": "Text Analysis",
+  "license": "CC-BY (Attribution 4.0 International)"
+}`;
+            // Don't auto-populate to keep it clean
+        };
+    </script>
+</body>
+</html>
