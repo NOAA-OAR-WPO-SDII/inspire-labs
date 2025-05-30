@@ -233,7 +233,7 @@ Version 1.0. https://inspirelabs.github.io/inspire-labs/metadata-schema/
 ---
 
 <div class="next-steps-banner">
-  <h3>🚀 Ready to Start?</h3>
+  <h3> Ready to Start?</h3>
   <p>Download the <a href="templates/inspire-template.csv">CSV template</a>, check out our <a href="examples/">examples</a>, or <a href="tools/validator.html">validate your existing data</a>.</p>
   <p><a href="../">← Back to InSPIRE Labs</a> | <a href="field-reference.html">Field Reference →</a></p>
 </div>
