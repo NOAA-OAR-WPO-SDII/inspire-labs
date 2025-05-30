@@ -45,44 +45,44 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 
 The schema organizes metadata into **7 logical sections**:
 
-### **1. 🆔 Identification & Overview**
+### **1.  Identification & Overview**
 Core dataset information including title, creators, funding, and licensing.
 - **Key Fields:** `title`, `abstract`, `creator`, `license`, `citation_recommendation`
 - **Focus:** Who created what, when, and how to cite it
 
-### **2. 🏷️ Subject Classification & Keywords** 
+### **2.  Subject Classification & Keywords** 
 Domain classification and discoverability using controlled vocabularies.
 - **Key Fields:** `subject_category`, `keywords_controlled`, `keywords_other`
 - **Focus:** What domain and topics does this dataset cover
 
-### **3. 🌍 Geographic & Temporal Information**
+### **3.  Geographic & Temporal Information**
 Spatial and temporal coverage with flexible location specification.
 - **Key Fields:** `geographic_coverage_controlled`, `temporal_coverage_start`, `spatial_resolution`
 - **Focus:** Where and when the data represents
 
-### **4. 📊 Data Characteristics & Methods**
+### **4.  Data Characteristics & Methods**
 Collection methodology, data types, and processing history.
 - **Key Fields:** `data_type`, `collection_methodology`, `uncertainty_quantification`
 - **Focus:** How the data was collected and processed
 
-### **5. 🎯 Decision-Support Attributes**
+### **5.  Decision-Support Attributes**
 Intended applications and integration capabilities.
 - **Key Fields:** `use_cases`, `integration_with_other_data`
 - **Focus:** How the data can be used for decisions
 
-### **6. 🤝 Community Engagement & Ethics**
+### **6.  Community Engagement & Ethics**
 Community involvement and ethical considerations.
 - **Key Fields:** `community_engagement`, `equity_accessibility`
 - **Focus:** Was the community involved and are there equity considerations
 
-### **7. 🔧 Technical Details & Access**
+### **7.  Technical Details & Access**
 Access methods, file formats, and technical requirements.
 - **Key Fields:** `data_access_url`, `api_endpoint`, `software_dependencies`
 - **Focus:** How to access and use the data technically
 
 ---
 
-## 📥 **Downloads & Resources**
+##  **Downloads & Resources**
 
 | Resource | Format | Best For | Download |
 |----------|--------|----------|----------|
@@ -93,7 +93,7 @@ Access methods, file formats, and technical requirements.
 
 ---
 
-## 📚 **Examples**
+##  **Examples**
 
 Real-world examples showing the schema in action:
 
@@ -153,19 +153,19 @@ Test your metadata against the InSPIRE schema with our interactive validation to
 ## 📖 **Documentation**
 
 ### **Complete References**
-- [📚 **Field Reference**](field-reference.html) - Detailed description of every field
-- [📝 **Controlled Vocabularies**](controlled-vocabularies.html) - All standardized terms and options
-- [🔧 **Implementation Guide**](implementation-guide.html) - Technical integration details
-- [❓ **FAQ**](faq.html) - Common questions and answers
+- [ **Field Reference**](field-reference.html) - Detailed description of every field
+- [ **Controlled Vocabularies**](controlled-vocabularies.html) - All standardized terms and options
+- [ **Implementation Guide**](implementation-guide.html) - Technical integration details
+- [ **FAQ**](faq.html) - Common questions and answers
 
 ### **Standards Compliance**
-- [📊 **Standards Mapping**](standards-compliance.html) - How InSPIRE maps to DDI, ISO 19115, DataCite
-- [🔗 **Crosswalks**](crosswalks.html) - Field mappings between standards
-- [📐 **Best Practices**](best-practices.html) - Recommended usage patterns
+- [ **Standards Mapping**](standards-compliance.html) - How InSPIRE maps to DDI, ISO 19115, DataCite
+- [ **Crosswalks**](crosswalks.html) - Field mappings between standards
+- [ **Best Practices**](best-practices.html) - Recommended usage patterns
 
 ---
 
-## 🎓 **Getting Started Guide**
+##  **Getting Started Guide**
 
 ### **For Researchers**
 1. **Download** the [CSV template](templates/inspire-template.csv)
@@ -187,7 +187,7 @@ Test your metadata against the InSPIRE schema with our interactive validation to
 
 ---
 
-## 🌟 **Key Features**
+##  **Key Features**
 
 ### **Built for Social Science**
 - Community engagement tracking
@@ -208,12 +208,12 @@ Test your metadata against the InSPIRE schema with our interactive validation to
 
 ---
 
-## 🤝 **Community & Support**
+##  **Community & Support**
 
 ### **Get Involved**
-- **💬 Schema Discussions:** [GitHub Discussions](https://github.com/inspirelabs/inspire-labs/discussions)
-- **🐛 Report Issues:** [GitHub Issues](https://github.com/inspirelabs/inspire-labs/issues)
-- **📧 Schema Questions:** [schema@inspirelabs.org](mailto:schema@inspirelabs.org)
+- ** Schema Discussions:** [GitHub Discussions](https://github.com/inspirelabs/inspire-labs/discussions)
+- ** Report Issues:** [GitHub Issues](https://github.com/inspirelabs/inspire-labs/issues)
+- ** Schema Questions:** [schema@inspirelabs.org](mailto:schema@inspirelabs.org)
 
 ### **Contributing**
 We welcome contributions to improve the schema:
