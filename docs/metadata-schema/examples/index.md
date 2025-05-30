@@ -8,9 +8,9 @@
 
 These examples show how the InSPIRE schema captures metadata for different types of social science weather research. Each example demonstrates the schema's flexibility while maintaining consistency across different domains and methodologies.
 
-## 📚 **Complete Examples**
+##  **Complete Examples**
 
-### 🌀 **Emergency Management**
+###  **Emergency Management**
 **[Hurricane Harvey Social Media Response Dataset](hurricane-harvey-example.json)**
 - **Domain:** Emergency Management  
 - **Data Type:** Text Analysis
@@ -20,7 +20,7 @@ These examples show how the InSPIRE schema captures metadata for different types
 
 ---
 
-### 🌾 **Risk Perception**
+###  **Risk Perception**
 **[Farmer Risk Perception During 2019 Midwest Drought](drought-perception-example.json)**
 - **Domain:** Risk Perception
 - **Data Type:** Survey Data  
@@ -30,7 +30,7 @@ These examples show how the InSPIRE schema captures metadata for different types
 
 ---
 
-### 🏙️ **Social Vulnerability**
+###  **Social Vulnerability**
 **[Social Vulnerability to Urban Heat Islands in Phoenix](urban-heat-example.json)**
 - **Domain:** Social Vulnerability
 - **Data Type:** Geospatial Data
@@ -40,7 +40,7 @@ These examples show how the InSPIRE schema captures metadata for different types
 
 ---
 
-### 📡 **Weather Communication**
+###  **Weather Communication**
 **[Impact-Based Tornado Warning Communication Effectiveness](tornado-communication-example.json)**
 - **Domain:** Weather Communication
 - **Data Type:** Survey Data
@@ -50,7 +50,7 @@ These examples show how the InSPIRE schema captures metadata for different types
 
 ---
 
-## 🎯 **What These Examples Show**
+##  **What These Examples Show**
 
 ### **Schema Flexibility**
 - **Multiple data types:** Survey, geospatial, text analysis, sensor data
@@ -72,7 +72,7 @@ These examples show how the InSPIRE schema captures metadata for different types
 
 ---
 
-## 🔍 **Browse by Domain**
+##  **Browse by Domain**
 
 | Domain | Example | Data Type | Key Focus |
 |--------|---------|-----------|-----------|
@@ -83,7 +83,7 @@ These examples show how the InSPIRE schema captures metadata for different types
 
 ---
 
-## 🔍 **Browse by Data Type**
+##  **Browse by Data Type**
 
 | Data Type | Examples | Common Features |
 |-----------|----------|-----------------|
@@ -93,7 +93,7 @@ These examples show how the InSPIRE schema captures metadata for different types
 
 ---
 
-## 📝 **Using These Examples**
+##  **Using These Examples**
 
 ### **For Researchers**
 - **Copy and adapt** field examples for your own datasets
@@ -127,7 +127,7 @@ Ready to create metadata for your dataset?
 
 ---
 
-## 💡 **Contributing Examples**
+##  **Contributing Examples**
 
 Have a dataset that would make a good example? We'd love to include more examples showing:
 
@@ -135,10 +135,9 @@ Have a dataset that would make a good example? We'd love to include more example
 - **Indigenous knowledge** integration
 - **Longitudinal studies** with multiple time periods  
 - **Multi-institutional collaborations**
-- **Sensor network data** and IoT applications
 - **Economic impact** assessments
 
-**Contact us:** [schema@inspirelabs.org](mailto:schema@inspirelabs.org)
+**Contact us:** [kyle.metta@noaa.gov](mailto:kyle.metta@noaa.gov)
 
 ---
 
