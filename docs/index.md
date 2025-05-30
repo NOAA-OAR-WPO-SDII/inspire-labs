@@ -2,8 +2,7 @@
 
 **Development space for social scientists and SBES datasets related to extreme weather**
 
-[![NOAA](https://img.shields.io/badge/NOAA-Social%20Science%20Program-blue)](https://www.weather.gov/about/social-science-program)
-[![AWS](https://img.shields.io/badge/AWS-Cloud%20Native-orange)](https://aws.amazon.com/)
+[![NOAA](https://img.shields.io/badge/NOAA-Social%20Science%20Program-blue)](https://wpo.noaa.gov/social-science/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
