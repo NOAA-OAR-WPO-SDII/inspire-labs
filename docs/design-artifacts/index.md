@@ -22,7 +22,7 @@ Our design process is driven by the needs of social scientists working with weat
 - **Collaborative** - Designed for interdisciplinary teams
 
 ### **Get Involved**
-- [📧 Participate in user research](mailto:research@inspirelabs.org?subject=User%20Research)
+- [📧 Participate in user research](mailto:kyle.metta@noaa.gov)
 - [💭 Share design feedback](https://github.com/inspirelabs/inspire-labs/discussions)
 
 ---
