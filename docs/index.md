@@ -19,12 +19,6 @@ We're building InSPIRE as a **cloud-native platform on Amazon Web Services (AWS)
 
 This space is for **experiments, feedback, and iteration**. You'll find:
 
-<div class="feature-grid">
-  <div class="feature-card">
-    <h3>🔬 Prototypes</h3>
-    <p>Early versions of InSPIRE platform features for testing and feedback</p>
-    <a href="prototypes/" class="btn-link">Explore Prototypes →</a>
-  </div>
   
   <div class="feature-card">
     <h3> Tutorials</h3>
