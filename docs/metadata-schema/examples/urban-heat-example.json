@@ -1,0 +1,63 @@
+{
+  "title": "Social Vulnerability to Urban Heat Islands in Phoenix Metropolitan Area",
+  "abstract": "Geospatial analysis combining land surface temperature data, demographic characteristics, and health outcomes to identify communities most vulnerable to extreme heat events in Phoenix, Arizona. Includes neighborhood-level vulnerability indices and cooling resource accessibility mapping.",
+  "purpose": "To identify vulnerable populations and inform targeted heat mitigation strategies, cooling center placement, and urban planning decisions for climate adaptation",
+  "creator": "Dr. Elena Rodriguez, Arizona State University",
+  "unique_identifier": "10.5555/phoenix-heat-vulnerability-2022",
+  "version": "2.1",
+  "contributors": [
+    {
+      "name": "Dr. James Park",
+      "role": "Co-Investigator"
+    },
+    {
+      "name": "Maria Gonzalez",
+      "role": "Data Analyst"
+    },
+    {
+      "name": "Phoenix Community Heat Response Coalition",
+      "role": "Community Partner"
+    },
+    {
+      "name": "Alex Thompson",
+      "role": "Software Developer"
+    }
+  ],
+  "funding_reference": ["NSF Award #2043213", "Arizona Department of Health Services", "Phoenix Office of Environmental Programs"],
+  "license": "CC-BY (Attribution 4.0 International)",
+  "citation_recommendation": "Rodriguez, E., Park, J., & Gonzalez, M. (2022). Social Vulnerability to Urban Heat Islands in Phoenix Metropolitan Area. Arizona State University. https://doi.org/10.5555/phoenix-heat-vulnerability-2022",
+  
+  "subject_category": "Social Vulnerability",
+  "keywords_controlled": ["Social Equity in Disasters", "GIS Mapping"],
+  "keywords_other": ["Urban Heat Island", "Environmental Justice", "Climate Adaptation", "Public Health", "Vulnerability Mapping", "Heat Exposure"],
+  "related_datasets": ["https://doi.org/10.5555/phoenix-temperature-2022", "https://doi.org/10.5555/arizona-health-heat-2022", "https://doi.org/10.5555/cooling-centers-phoenix"],
+  
+  "geographic_coverage_controlled": ["Urban Areas"],
+  "geographic_coverage_specific": "Phoenix-Mesa-Chandler Metropolitan Statistical Area, Arizona",
+  "coordinate_system": "NAD83 / Arizona Central (EPSG:2223)",
+  "spatial_resolution": "Census tract level (approximately 1,200-8,000 people per tract)",
+  "temporal_coverage_start": "2020-06-01",
+  "temporal_coverage_end": "2022-09-30",
+  "temporal_resolution": "Summer seasons (June-September) 2020-2022",
+  
+  "data_type": "Geospatial Data",
+  "data_format": "Shapefile, GeoJSON, CSV",
+  "collection_methodology": "Combined satellite-derived land surface temperature (MODIS), American Community Survey demographic data, health department emergency visit records, and field-collected cooling resource inventory",
+  "uncertainty_quantification": "Land surface temperature accuracy ±2°C; demographic estimates include Census Bureau margins of error; health data suppressed for cells <10 cases",
+  "data_processing": "Spatial interpolation using inverse distance weighting, vulnerability index calculated using principal components analysis, cooling access measured via network analysis with 15-minute walk threshold",
+  "provenance": "Initial analysis completed 2021, updated with 2022 data and refined methodology v2.0 (March 2023), current version includes community feedback integration v2.1 (August 2023)",
+  
+  "use_cases": "Infrastructure Risk Assessment",
+  "integration_with_other_data": "Compatible with CDC Social Vulnerability Index, EPA Environmental Justice Screening Tool, and local emergency management systems via standard geographic identifiers",
+  
+  "community_engagement": true,
+  "equity_accessibility": true,
+  
+  "data_access_url": "https://sustainability.asu.edu/datasets/phoenix-heat-vulnerability",
+  "api_endpoint": "https://api.sustainability.asu.edu/heat-vulnerability/v2",
+  "file_size": "1.2 GB",
+  "software_dependencies": "Python 3.8+, GDAL, GeoPandas, R 4.1+ with sf package, QGIS 3.16+ for visualization",
+  "access_restrictions": "Health data aggregated to protect privacy; individual-level data requires IRB approval",
+  "data_sensitivity": false,
+  "retention_policy": "Permanently archived with ASU Digital Repository and EPA Environmental Dataset Gateway with 10-year active access guarantee"
+}
