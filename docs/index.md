@@ -99,14 +99,14 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 
 ### **Getting Started**
 - [ Platform Overview](overview.html) - High-level introduction to InSPIRE
-- [ Technical Architecture](architecture.html) - System design and components (comming soon)
+- [ Technical Architecture](architecture.html) - System design and components (coming soon)
 - [ User Personas](personas.html) - Who we're building for
 
 
 ### **For Researchers**
 - [ Data Standards](metadata-schema/) - Metadata schema documentation
 - [ Use Cases](use-cases.html) - Real-world application examples
-- [ Community Guidelines](community.html) - Collaboration expectations (comming soon!)
+- [ Community Guidelines](community.html) - Collaboration expectations (coming soon!)
 
 ### **For Developers**
 - [ Issue Tracking](https://github.com/inspirelabs/inspire-platform/issues) - Bug reports and feature requests
