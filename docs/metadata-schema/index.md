@@ -154,14 +154,14 @@ Test your metadata against the InSPIRE schema with our interactive validation to
 
 ### **Complete References**
 - [ **Field Reference**](field-reference.html) - Detailed description of every field
-- [ **Controlled Vocabularies**](controlled-vocabularies.html) - All standardized terms and options
-- [ **Implementation Guide**](implementation-guide.html) - Technical integration details
-- [ **FAQ**](faq.html) - Common questions and answers
+- [ **Controlled Vocabularies**](controlled-vocabularies.html) - All standardized terms and options (coming soon!)
+- [ **Implementation Guide**](implementation-guide.html) - Technical integration details (coming soon!) 
+- [ **FAQ**](faq.html) - Common questions and answers (coming soon) 
 
 ### **Standards Compliance**
-- [ **Standards Mapping**](standards-compliance.html) - How InSPIRE maps to DDI, ISO 19115, DataCite
-- [ **Crosswalks**](crosswalks.html) - Field mappings between standards
-- [ **Best Practices**](best-practices.html) - Recommended usage patterns
+- [ **Standards Mapping**](standards-compliance.html) - How InSPIRE maps to DDI, ISO 19115, DataCite (coming soon)
+- [ **Crosswalks**](crosswalks.html) - Field mappings between standards (coming soon)
+- [ **Best Practices**](best-practices.html) - Recommended usage patterns (coming soon)
 
 ---
 
