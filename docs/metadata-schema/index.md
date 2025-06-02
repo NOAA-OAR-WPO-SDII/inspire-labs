@@ -129,7 +129,7 @@ Test your metadata against the InSPIRE schema with our interactive validation to
 - ✅ JSON and CSV input support
 - ✅ Real-time validation feedback
 - ✅ Completeness scoring
-- ✅ Controlled vocabulary checking
+- ✅Controlled vocabulary checking
 
 [🔧 **Try the Validator →**](tools/validator.html)
 
