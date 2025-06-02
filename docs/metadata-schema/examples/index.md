@@ -115,7 +115,7 @@ These examples show how the InSPIRE schema captures metadata for different types
 
 ---
 
-## 🛠️ **Validate Your Own Data**
+##  **Validate Your Own Data**
 
 Ready to create metadata for your dataset? 
 
