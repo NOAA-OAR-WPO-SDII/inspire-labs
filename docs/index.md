@@ -9,7 +9,7 @@
 
 ##  **What is InSPIRE?**
 
-**InSPIRE Labs** is the development space for the **Integrated Societal-data Platform for Interdisciplinary Research and Evaluation** — or InSPIRE for short. This platform is a core product of the **Societal Data Insights Initiative (SDII)** within NOAA's Social Science Program (SSP) at the Weather Program Office (WPO).
+**InSPIRE** is the development space for the **Integrated Societal-data Platform for Interdisciplinary Research and Evaluation** — or InSPIRE for short. This platform is a core product of the **Societal Data Insights Initiative (SDII)** within NOAA's Social Science Program (SSP) at the Weather Program Office (WPO).
 
 We're building InSPIRE as a **cloud-native platform on Amazon Web Services (AWS)** to support the future of integrated weather and social science research. Our goal is to enable more thoughtful coordination and evaluation by bringing together diverse data sources and disciplinary perspectives.
 
