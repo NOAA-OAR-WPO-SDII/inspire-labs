@@ -97,21 +97,21 @@ Access methods, file formats, and technical requirements.
 
 Real-world examples showing the schema in action:
 
-### 🌀 **Hurricane Harvey Social Media Dataset**
+###  **Hurricane Harvey Social Media Dataset**
 Emergency management research using social media data during a major hurricane event.
 - **Domain:** Emergency Management
 - **Location:** Gulf Coast, Urban Areas  
 - **Data Type:** Text Analysis
 - [📄 View Complete Example](examples/hurricane-harvey-example.json)
 
-### 🌾 **Midwest Drought Perception Study**
+###  **Midwest Drought Perception Study**
 Risk perception research among rural farming communities during drought conditions.
 - **Domain:** Risk Perception
 - **Location:** Midwest, Rural Communities
 - **Data Type:** Survey Data
 - [📄 View Complete Example](examples/drought-perception-example.json)
 
-### 🏙️ **Urban Heat Island Social Vulnerability**
+###  **Urban Heat Island Social Vulnerability**
 Geospatial analysis of social vulnerability to extreme heat in urban environments.
 - **Domain:** Social Vulnerability
 - **Location:** Urban Areas
