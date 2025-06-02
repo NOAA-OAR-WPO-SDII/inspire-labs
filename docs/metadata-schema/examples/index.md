@@ -142,7 +142,7 @@ Have a dataset that would make a good example? We'd love to include more example
 ---
 
 <div class="next-steps">
-  <h3>🚀 Next Steps</h3>
+  <h3> Next Steps</h3>
   <p>Explore the <a href="../field-reference.html">complete field reference</a>, try the <a href="../tools/validator.html">online validator</a>, or return to the <a href="../">metadata schema homepage</a>.</p>
 </div>
 
