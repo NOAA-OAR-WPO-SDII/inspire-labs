@@ -50,9 +50,9 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 ### **⚡ Quick Start**
 
 <div class="quick-actions">
-  <a href="metadata-schema/templates/inspire-template.csv" class="btn btn-primary">📥 Download CSV Template</a>
-  <a href="metadata-schema/tools/validator.html" class="btn btn-secondary">✅ Validate Your Data</a>
-  <a href="metadata-schema/examples/" class="btn btn-outline">📚 See Examples</a>
+  <a href="metadata-schema/templates/inspire-template.csv" class="btn btn-primary"> Download CSV Template</a>
+  <a href="metadata-schema/tools/validator.html" class="btn btn-secondary"> Validate Your Data</a>
+  <a href="metadata-schema/examples/" class="btn btn-outline"> See Examples</a>
   <a href="metadata-schema/" class="btn btn-outline">📖 Full Documentation</a>
 </div>
 
