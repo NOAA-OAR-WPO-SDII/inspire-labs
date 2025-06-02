@@ -136,7 +136,6 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 
 ### **Recent Developments**
 - **v1.0 Metadata Schema** - Complete field specification with controlled vocabularies
-- **Prototype Data Viewer** - Interactive visualization tool for weather-social data
 - **Community Feedback Portal** - Streamlined input collection from researchers
 - **AWS Architecture** - Cloud-native infrastructure design completed
 
