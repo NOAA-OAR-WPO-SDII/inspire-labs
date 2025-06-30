@@ -1,9 +1,9 @@
-name: Build Binder Environment
+name: Build Binder Cache Only
 
 on:
   push:
     branches:
-      - main  # or whatever your default branch is
+      - main
 
 jobs:
   build:
@@ -12,7 +12,9 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v2
 
-      - name: Build and cache Binder image
+      - name: Build and cache Binder image (without pushing)
         uses: jupyterhub/repo2docker-action@master
         with:
           BINDER_CACHE: true
+          NO_PUSH: true
+
