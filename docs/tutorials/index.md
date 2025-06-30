@@ -17,6 +17,13 @@ We're developing comprehensive tutorials to help researchers work with integrate
 - **Visualization Best Practices**
 - **Community Engagement in Data Collection**
 
+## Interactive Tutorial Notebook
+
+Click below to launch the demo notebook live in Binder:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mettakyle/inspire-labs/HEAD?labpath=docs/tutorials/notebooks/demo_tutorial.ipynb)
+
+
 ### **Stay Updated**
 - [💬 Follow development](https://github.com/inspirelabs/inspire-labs/discussions)
 
