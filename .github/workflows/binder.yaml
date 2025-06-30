@@ -3,7 +3,7 @@ name: Build Binder Environment
 on:
   push:
     branches:
-      - main
+      - main  # or whatever your default branch is
 
 jobs:
   build:
@@ -15,5 +15,4 @@ jobs:
       - name: Build and cache Binder image
         uses: jupyterhub/repo2docker-action@master
         with:
-          MYBINDERORG_CACHE: true
-          NO_PUSH: true
+          BINDER_CACHE: true
