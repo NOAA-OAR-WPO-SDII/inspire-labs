@@ -1,18 +1,18 @@
-name: Build Binder Environment
+name: Prebuild Binder image
 
 on:
   push:
     branches:
-      - main  # Change if your default branch has a different name
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the repository
-        uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Build and cache Binder image
-        uses: machine-learning-apps/repo2docker-action@master
-        with:
-          MYBINDERORG_CACHE: true
+      - name: Build with repo2docker
+        run: |
+          pip install jupyter-repo2docker
+          jupyter-repo2docker --no-run --BinderHubCache
