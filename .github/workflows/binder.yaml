@@ -1,4 +1,4 @@
-name: Prebuild Binder image
+name: Build Binder Environment
 
 on:
   push:
@@ -9,16 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Check out the repository
+        uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Build and cache Binder image
+        uses: jupyterhub/repo2docker-action@master
         with:
-          python-version: "3.10"
-
-      - name: Install repo2docker
-        run: pip install jupyter-repo2docker
-
-      - name: Build Binder image without running it
-        run: jupyter-repo2docker --no-run --json-logs .
+          BINDER_CACHE: true
