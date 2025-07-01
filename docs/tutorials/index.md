@@ -13,14 +13,14 @@ We're developing comprehensive tutorials to help researchers work with integrate
 ### **Planned Tutorials**
 - **Getting Started with Weather-Social Data Integration**
 - **Using the InSPIRE Metadata Schema**  
-- **AWS Data Pipeline Setup**
 - **Visualization Best Practices**
-- **Community Engagement in Data Collection**
+- **AWS Data Pipeline Setup**
 
 ## Interactive Tutorial Notebook
 
 Click below to launch the demo notebook live in Binder:
 
+-### **Tropycal Tutorial** 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mettakyle/inspire-labs/HEAD?labpath=docs/tutorials/notebooks/Tropycal.ipynb)
 
 
