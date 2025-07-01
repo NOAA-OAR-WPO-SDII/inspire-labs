@@ -16,9 +16,10 @@ We're developing comprehensive tutorials to help researchers work with integrate
 - **Visualization Best Practices**
 - **AWS Data Pipeline Setup**
 
-## Interactive Tutorial Notebook
+## Interactive Tutorial Notebooks
+In the meantime, checkout our current tutorials on accessing and using data
 
-Click below to launch the demo notebook live in Binder:
+Click below to launch the notebook live in Binder:
 
 ### **Tropycal Tutorial** 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mettakyle/inspire-labs/HEAD?labpath=docs/tutorials/notebooks/Tropycal.ipynb)
