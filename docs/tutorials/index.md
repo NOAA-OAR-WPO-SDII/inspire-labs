@@ -20,7 +20,7 @@ We're developing comprehensive tutorials to help researchers work with integrate
 
 Click below to launch the demo notebook live in Binder:
 
--### **Tropycal Tutorial** 
+### **Tropycal Tutorial** 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mettakyle/inspire-labs/HEAD?labpath=docs/tutorials/notebooks/Tropycal.ipynb)
 
 
