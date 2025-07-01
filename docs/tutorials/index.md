@@ -25,7 +25,8 @@ Click below to launch the demo notebook live in Binder:
 
 
 ### **Stay Updated**
-- [💬 Follow development](https://github.com/inspirelabs/inspire-labs/discussions)
+- [💬 Follow development](https://github.com/mettakyle/inspirelabs/inspire-labs/discussions)
+
 
 ---
 
