@@ -185,7 +185,7 @@ https://inspirelabs.github.io/inspire-labs/
 
 <div class="footer-cta">
   <h3>🚀 Ready to Get Started?</h3>
-  <p>Explore our <a href="metadata-schema/">metadata schema</a>, try our <a href="prototypes/">prototypes</a>, or <a href="mailto:research@inspirelabs.org">get in touch</a> to learn more about InSPIRE.</p>
+  <p>Explore our <a href="metadata-schema/">metadata schema</a>,or <a href="mailto:kyle.metta@noaa.gov">get in touch</a> to learn more about InSPIRE.</p>
 </div>
 
 <style>
