@@ -80,27 +80,15 @@ The InSPIRE Metadata Schema bridges the gap between meteorological data standard
 - Shared methodology repositories
 - Best practices documentation
 
-### **Technology Stack**
-
-- **Cloud Infrastructure:** Amazon Web Services (AWS)
-- **Data Storage:** S3,
-- **Processing:** Lambda, EC2, SageMaker
-- **API:** 
-- **Frontend:** Modern web frameworks and graphical user interface
-
 ---
 
 ## 📖 **Resources**
 
 ### **Getting Started**
-- [ Platform Overview](overview.html) - High-level introduction to InSPIRE
-- [ Technical Architecture](architecture.html) - System design and components (coming soon)
-- [ User Personas](personas.html) - Who we're building for
-
 
 ### **For Researchers**
 - [ Data Standards](metadata-schema/) - Metadata schema documentation
-- [ Use Cases](use-cases.html) - Real-world application examples
+- [ Use Cases](use-cases.html) - Real-world application examples (Coming soon!) 
 - [ Community Guidelines](community.html) - Collaboration expectations (coming soon!)
 
 ### **For Developers**
