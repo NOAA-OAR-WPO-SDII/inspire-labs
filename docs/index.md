@@ -32,11 +32,6 @@ This space is for **experiments, feedback, and iteration**. You'll find:
     <a href="metadata-schema/" class="btn-link">Schema Documentation →</a>
   </div>
   
-  <div class="feature-card">
-    <h3> Design Artifacts</h3>
-    <p>User research, wireframes, and design decisions driving platform development</p>
-    <a href="design-artifacts/" class="btn-link">Design Resources →</a>
-  </div>
 </div>
 
 ---
