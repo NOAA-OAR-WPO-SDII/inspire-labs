@@ -1,36 +1,36 @@
 {
-  "title": "Social Vulnerability to Urban Heat Islands in Phoenix Metropolitan Area",
-  "abstract": "Geospatial analysis combining land surface temperature data, demographic characteristics, and health outcomes to identify communities most vulnerable to extreme heat events in Phoenix, Arizona. Includes neighborhood-level vulnerability indices and cooling resource accessibility mapping.",
-  "purpose": "To identify vulnerable populations and inform targeted heat mitigation strategies, cooling center placement, and urban planning decisions for climate adaptation",
-  "creator": "Dr. Elena Rodriguez, Arizona State University",
-  "unique_identifier": "10.5555/phoenix-heat-vulnerability-2022",
+  "title": "EXAMPLE:Social Vulnerability to Urban Heat Islands in Phoenix Metropolitan Area",
+  "abstract": "EXAMPLE: Geospatial analysis combining land surface temperature data, demographic characteristics, and health outcomes to identify communities most vulnerable to extreme heat events in Phoenix, Arizona. Includes neighborhood-level vulnerability indices and cooling resource accessibility mapping.",
+  "purpose": "EXAMPLE: To identify vulnerable populations and inform targeted heat mitigation strategies, cooling center placement, and urban planning decisions for climate adaptation",
+  "creator": "Dr. Elena Example, Arizona Example University",
+  "unique_identifier": "10.00000/phoenix-heat-vulnerability-2022",
   "version": "2.1",
   "contributors": [
     {
-      "name": "Dr. James Park",
+      "name": "Dr. James Example",
       "role": "Co-Investigator"
     },
     {
-      "name": "Maria Gonzalez",
+      "name": "Maria Example",
       "role": "Data Analyst"
     },
     {
-      "name": "Phoenix Community Heat Response Coalition",
+      "name": "Phoenix Community Heat Example Response Coalition",
       "role": "Community Partner"
     },
     {
-      "name": "Alex Thompson",
+      "name": "Alex Example",
       "role": "Software Developer"
     }
   ],
-  "funding_reference": ["NSF Award #2043213", "Arizona Department of Health Services", "Phoenix Office of Environmental Programs"],
+  "funding_reference": ["NSF Award #20400000", "Arizona Department of Example Services", "Phoenix Office of Example Programs"],
   "license": "CC-BY (Attribution 4.0 International)",
-  "citation_recommendation": "Rodriguez, E., Park, J., & Gonzalez, M. (2022). Social Vulnerability to Urban Heat Islands in Phoenix Metropolitan Area. Arizona State University. https://doi.org/10.5555/phoenix-heat-vulnerability-2022",
+  "citation_recommendation": "Example, E., Example, J., & Example, M. (2022). Social Vulnerability to Urban Heat Islands in Example Metropolitan Area. Arizona Example University. https://doi.org/10.00000/phoenix-heat-vulnerability-2022",
   
   "subject_category": "Social Vulnerability",
   "keywords_controlled": ["Social Equity in Disasters", "GIS Mapping"],
   "keywords_other": ["Urban Heat Island", "Environmental Justice", "Climate Adaptation", "Public Health", "Vulnerability Mapping", "Heat Exposure"],
-  "related_datasets": ["https://doi.org/10.5555/phoenix-temperature-2022", "https://doi.org/10.5555/arizona-health-heat-2022", "https://doi.org/10.5555/cooling-centers-phoenix"],
+  "related_datasets": ["https://doi.org/10.000000/phoenix-temperature-2022", "https://doi.org/10.5555/arizona-health-heat-2022", "https://doi.org/10.5555/cooling-centers-phoenix"],
   
   "geographic_coverage_controlled": ["Urban Areas"],
   "geographic_coverage_specific": "Phoenix-Mesa-Chandler Metropolitan Statistical Area, Arizona",
