@@ -1,32 +1,32 @@
 {
-  "title": "Farmer Risk Perception During 2019 Midwest Drought",
-  "abstract": "Survey-based study examining how agricultural producers in Iowa, Illinois, and Missouri perceived and responded to drought risk during the 2019 growing season. Includes demographic data, risk perception scales, and behavioral response measures.",
+  "title": "EXAMPLE:Farmer Risk Perception During 2019 Midwest Drought",
+  "abstract": " EXAMPLE: Survey-based study examining how agricultural producers in Iowa, Illinois, and Missouri perceived and responded to drought risk during the 2019 growing season. Includes demographic data, risk perception scales, and behavioral response measures.",
   "purpose": "To understand how farmers' risk perceptions influence drought preparedness and adaptation strategies, informing agricultural extension services and policy development",
-  "creator": "Dr. Sarah Martinez, Iowa State University",
-  "unique_identifier": "10.5555/drought-perception-2019",
+  "creator": "Dr. Sarah Example, Example State University",
+  "unique_identifier": "10.00000/drought-perception-2019",
   "version": "1.0",
   "contributors": [
     {
-      "name": "Dr. Michael Chen",
+      "name": "Dr. Michael Example",
       "role": "Co-Investigator"
     },
     {
-      "name": "Jessica Rodriguez",
+      "name": "Jessica Example",
       "role": "Field Data Collector"
     },
     {
-      "name": "Iowa Farm Bureau",
+      "name": "Iowa Farm Example Bureau",
       "role": "Community Partner"
     }
   ],
-  "funding_reference": ["USDA NIFA Award #2018-67023-27857", "Iowa State University Extension"],
+  "funding_reference": ["USDA NIFA Award #2018-60000-20000", "Iowa State University Extension EXAMPLE"],
   "license": "CC-BY-NC (Attribution-NonCommercial 4.0 International)",
-  "citation_recommendation": "Martinez, S., Chen, M., & Rodriguez, J. (2019). Farmer Risk Perception During 2019 Midwest Drought. Iowa State University. https://doi.org/10.5555/drought-perception-2019",
+  "citation_recommendation": "Example, S., Example, M., & Example, J. (2019). Farmer Risk Perception During 2019 Midwest Drought. Iowa State University. https://doi.org/10.5555/drought-perception-2019",
   
   "subject_category": "Risk Perception",
   "keywords_controlled": ["Social Equity in Disasters"],
   "keywords_other": ["Agriculture", "Drought Preparedness", "Risk Communication", "Rural Communities", "Farm Management"],
-  "related_datasets": ["https://doi.org/10.5555/midwest-drought-climate-2019", "https://doi.org/10.5555/agricultural-economics-2019"],
+  "related_datasets": ["https://doi.org/10.5555/example2013", "https://doi.org/10.0000000/agricultural-economics-2019"],
   
   "geographic_coverage_controlled": ["Midwest", "Rural Communities"],
   "geographic_coverage_specific": "Agricultural counties in Iowa, Illinois, and Missouri",
@@ -55,5 +55,5 @@
   "software_dependencies": "R 4.0+, SPSS 26+, survey package for R",
   "access_restrictions": "Academic use only, requires data use agreement",
   "data_sensitivity": true,
-  "retention_policy": "Available for 20 years through Iowa State University Digital Repository with migration guarantee"
+  "retention_policy": "Available for 20 years through Iowa Example University Digital Repository with migration guarantee"
 }
