@@ -1,12 +1,12 @@
 # Example Datasets
 
-**Real-world examples demonstrating the InSPIRE Metadata Schema in practice**
+** In Development: Real-world examples demonstrating the InSPIRE Metadata Schema in practice**
 
 [⬅️ Back to Metadata Schema](../) | [🏠 InSPIRE Labs Home](../../)
 
 ---
 
-These examples show how the InSPIRE schema captures metadata for different types of social science weather research. Each example demonstrates the schema's flexibility while maintaining consistency across different domains and methodologies.
+These *synthetic* examples show how the InSPIRE schema captures metadata for different types of social science weather research. Each example demonstrates the schema's flexibility while maintaining consistency across different domains and methodologies. These examples are not referencing actual datasets, but are synthetic examples of how they schema can be used to fill out metadata for a project. 
 
 ##  **Complete Examples**
 
