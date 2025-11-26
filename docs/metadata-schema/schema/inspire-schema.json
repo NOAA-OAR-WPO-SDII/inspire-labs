@@ -8,7 +8,7 @@
   
   "properties": {
     
-    // Section 1: Identification & Overview
+
     "title": {
       "type": "string",
       "title": "Title",
@@ -111,7 +111,7 @@
       "x-section": "identification_overview"
     },
 
-    // Section 2: Subject Classification & Keywords  
+   
     "subject_category": {
       "type": "string",
       "enum": [
@@ -163,7 +163,7 @@
       "x-section": "subject_classification"
     },
 
-    // Section 3: Geographic & Temporal Information
+  
     "geographic_coverage_controlled": {
       "type": "array",
       "items": {
@@ -221,7 +221,7 @@
       "x-section": "geographic_temporal"
     },
 
-    // Section 4: Data Characteristics & Methods
+   
     "data_type": {
       "type": "string",
       "enum": [
@@ -269,7 +269,7 @@
       "x-section": "data_characteristics"
     },
 
-    // Section 5: Decision-Support Attributes
+    
     "use_cases": {
       "type": "string",
       "enum": [
@@ -293,7 +293,7 @@
       "x-section": "decision_support"
     },
 
-    // Section 6: Community Engagement & Ethical Considerations  
+     
     "community_engagement": {
       "type": "boolean",
       "title": "Community Engagement",
@@ -307,7 +307,7 @@
       "x-section": "community_ethics"
     },
 
-    // Section 7: Technical Details & Access
+    
     "data_access_url": {
       "type": "string",
       "format": "uri",
